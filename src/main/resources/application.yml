@@ -1,0 +1,12 @@
+server:
+  port: 8082
+spring:
+  datasource:
+    username: root
+    password: Root.123456
+    url: jdbc:mysql://test/ems_data?characterEncoding=utf8&useSSL=false
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
