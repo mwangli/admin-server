@@ -1,5 +1,6 @@
 package online.mwang.ems.pojo.entity;
 
+import com.alibaba.fastjson.JSONObject;
 import com.vladmihalcea.hibernate.type.json.JsonStringType;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -44,5 +45,5 @@ public class Category extends PageInfo implements Serializable {
 
     @Type(type = "json")
     @Column(columnDefinition = "json")
-    private String extraInfo;
+    private JSONObject extraInfo;
 }
