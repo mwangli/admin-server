@@ -25,19 +25,19 @@ public class CategoryController {
     }
 
     @PostMapping("/list")
-    @ApiOperation("查询用户信息")
+    @ApiOperation("查询品类信息")
     ResultInfo<List<Category>> listAll(@RequestBody Category category) {
         return categoryService.listCategory(category);
     }
 
     @PostMapping("/save")
-    @ApiOperation("保存用户信息")
+    @ApiOperation("保存品类信息")
     ResultInfo<Category> saveCategory(@RequestBody Category category) {
         return categoryService.saveCategory(category);
     }
 
     @DeleteMapping("/delete")
-    @ApiOperation("删除用户信息")
+    @ApiOperation("删除品类信息")
     ResultInfo<Integer> deleteCategory(@RequestBody List<Long> ids) {
         return categoryService.deleteCategory(ids);
     }
